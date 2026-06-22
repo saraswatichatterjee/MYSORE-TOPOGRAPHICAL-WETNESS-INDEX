@@ -53,7 +53,7 @@ html, body, #map {
     <body>
 
 <div id="titlebar">
-    MYSORE TOPOGRAPHICAL WETNESS INDEX
+    MYSORE - TOPOGRAPHICAL WETNESS INDEX
 </div>
 
 <div id="map">
@@ -345,9 +345,9 @@ abstract.hide = function () {
         bounds_group.addLayer(layer_idw_twi_3);
         map.addLayer(layer_idw_twi_3);
         var overlaysTree = [
-            {label: "idw_twi", layer: layer_idw_twi_3},
-            {label: '<img src="legend/Mysore_bound_2.png" /> Mysore_bound', layer: layer_Mysore_bound_2},
-            {label: '<img src="legend/MEGADATA_MY_1.png" /> MEGADATA_MY', layer: layer_MEGADATA_MY_1},
+            {label: '<img src="legend/Mysore_bound_2.png" /> MYSORE', layer: layer_Mysore_bound_2},
+			{label: "TWI", layer: layer_idw_twi_3},
+            {label: '<img src="legend/MEGADATA_MY_1.png" /> DATA', layer: layer_MEGADATA_MY_1},
             {label: "OSM Standard", layer: layer_OSMStandard_0},]
         var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
